@@ -1,12 +1,15 @@
-
 let order = (call_production) => {
   console.log("order filled, get it over to production!");
 
-call_production();
+  setTimeout(() => {
+    call_production();
+  }, 10000);
 };
 
-let production = () => {
-  console.log("production has started");
-};
+setTimeout(() => {
+  let production = () => {
+    console.log("production has started");
+  };
 
-console.log(order(production));
+  console.log(order(production));
+}, 500);
