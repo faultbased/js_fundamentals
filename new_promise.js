@@ -1,3 +1,7 @@
+const inv = {
+	sunglasses: 12,
+};
+
 const myExecutor = (resolve, reject) => {
 	if (sunglasses > 0) {
 		resolve("Sunglasses order processed.");
@@ -9,3 +13,5 @@ const myExecutor = (resolve, reject) => {
 const orderSunglasses = () => {
 	new promise(myExecutor);
 };
+
+console.log(orderSunglasses());
