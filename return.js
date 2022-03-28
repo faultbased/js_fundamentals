@@ -1,5 +1,5 @@
 function monitorCount(rows, columns) {
-	let eval = (rows * colums);
+	let eval = (rows * columns);
 	return eval;
 };
 
