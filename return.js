@@ -1,7 +1,7 @@
 function monitorCount(rows, columns) {
-	let eval = (rows * columns);
+	let eval = rows * columns;
 	return eval;
-};
+}
 
 const numOfMonitors = monitorCount(5, 4);
 
