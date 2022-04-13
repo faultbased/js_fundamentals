@@ -1,6 +1,7 @@
 {
   "name": "js_fundamentals",
   "version": "1.0.0",
+  "_comment1": "added type: module to fix node.js export/import error",
   "type": "module",
   "description": "",
   "main": "arg.js",
