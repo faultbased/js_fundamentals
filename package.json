@@ -1,6 +1,7 @@
 {
   "name": "js_fundamentals",
   "version": "1.0.0",
+  "type": "module",
   "description": "",
   "main": "arg.js",
   "scripts": {
