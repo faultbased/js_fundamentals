@@ -1,5 +1,5 @@
 let stocks = {
-	fruits: ["strawberry", "grapes", "banana", "apple"],
+	fruits: ["strawberrys", "grapes", "bananas", "apples"],
 	liquid: ["water", "ice"],
 	holder: ["cone", "cup", "stick"],
 	toppings: ["chocolate", "peanuts"],

@@ -1,15 +1,39 @@
-let shop_open = false;
+import { stocks } from "./stockArray.js";
 
-let order = (time, work) => {
+let shop_open = true;
+let employee_two = false;
+
+let order = (work) => {
+	/*think of the promise as a function machine that 
+	contains the settings/configuration of the promise and its structure; includes error handling*/
 	return new Promise((resolve, reject) => {
 		if (shop_open) {
-			resolve();
+			//promise endpoint if it resolves (completely)
+			resolve(work());
 		} else {
+			//promise endpoint if it doesn't resolve at all
 			reject(console.info("Our Shop is Closed!"));
-		} .catch(() => {
-			console.info("Customer left... like, damn nigga we closed we did you even knock in the first place?")
-		})
+		}
 	});
 };
 
-order();
+order(() => console.info(`${stocks.fruits[1]} was selected!`))
+	.then(() => {
+		order(() => console.info("We've started production!"));
+	})
+	//using time
+	.then(() => {
+		setTimeout(() => {
+			order(() =>
+				console.info("Employee 1 has arrived to replace Employee 2!")
+			);
+		}, 2500);
+	})
+
+	.then(() => {
+		setTimeout(() => {
+			order(() =>
+				console.info("Employee 2 shift has ended and has clocked out!")
+			);
+		}, 2500);
+	});
