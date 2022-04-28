@@ -18,6 +18,7 @@ let order = (work) => {
 };
 
 order(() => console.info(`${stocks.fruits[1]} was selected!`))
+	//first .then in the chain
 	.then(() => {
 		order(() => console.info("We've started production!"));
 	})
@@ -33,7 +34,47 @@ order(() => console.info(`${stocks.fruits[1]} was selected!`))
 	.then(() => {
 		setTimeout(() => {
 			order(() =>
+				console.info("Fruit has been chopped and added to mixing machine!")
+			);
+		}, 3100);
+	})
+
+	.then(() => {
+		setTimeout(() => {
+			order(() =>
 				console.info("Employee 2 shift has ended and has clocked out!")
 			);
-		}, 2500);
+		}, 2800);
+	})		
+
+	.then(() => {
+		order(() => console.info(`${stocks.fruits[0]} and ${stocks.fruits[1]} have been added to the mix!`));
+	})
+
+	.then(() => {
+		order(() => console.info("Ice Cream Machine initiates icecream making process!!!"));
+	})
+
+	.then(() => {
+		order(() => console.info(`Ice cream has been put into a ${stocks.holders[0]}`));
+	})
+
+	.then(() => {
+		order(() => console.info(`${stocks.fruits[0]} and ${stocks.fruits[1]} have been added to the mix!`));
+	})
+
+	.then(() => {
+		order(() => console.info(`${stocks.toppings[0]} has been added on top!`));
+	})
+
+	.then(() => {
+		order(() => console.info("Here's your order, enjoy your ice cream!"));
+	})
+
+	.catch(() => {
+		console.info("The customer has left the building...")
+	})
+
+	.finally(() => {
+		console.info("The day is over.")
 	});
