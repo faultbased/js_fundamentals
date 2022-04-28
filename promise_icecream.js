@@ -1,6 +1,6 @@
 import { stocks } from "./stockArray.js";
 
-let shop_open = true;
+let shop_open = false;
 let employee_two = false;
 
 let order = (work) => {
