@@ -10,4 +10,3 @@ changeItUp(origNum, origObj);
 
 console.info(origNum);
 console.info(origObj.color);
-console.info(changeItUp().num);
