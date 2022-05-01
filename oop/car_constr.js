@@ -9,3 +9,4 @@ class car {
 const carK = new car("Earth Green", "Honda", "Civic SE");
 
 console.info(carK);
+console.info(carK.brand);
