@@ -1,6 +1,6 @@
 class car {
 	constructor(color, brand, model) {
-		this.color = color;
+		this.color = "Firebrand Red";
 		this.brand = brand;
 		this.model = model;
 	}
