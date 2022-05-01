@@ -1,5 +1,6 @@
 class car {
 	constructor(color, brand, model) {
+		//can't overwrite defined 'value' for color 'key'
 		this.color = "Firebrand Red";
 		this.brand = brand;
 		this.model = model;
