@@ -24,4 +24,5 @@ read = () => {
 	console.info(getEmailAndlastName());
 };
 
+//outputs the key-value pairs of the wrapped up object content; 
 read();
