@@ -1,7 +1,7 @@
 const engine = {
 	//methods can be made using shorthand or anon arrow functions
 
-	//method shorthand, w/ one argument
+.1	//method shorthand, w/ one argument
 	start(adverb) {
 		console.info(`The engine starts up ${adverb}!`);
 	},
